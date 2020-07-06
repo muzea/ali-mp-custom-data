@@ -1,0 +1,1778 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "am-icon",
+      "description": "Am-icon 图标",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "icon 类型，具体效果扫上面二维码预览（有效值请见下方表格）。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "size",
+          "description": {
+            "kind": "markdown",
+            "value": "icon 大小，单位 px。\n\ntype: String\n\ndefaultValue: 17\n"
+          }
+        },
+        {
+          "name": "color",
+          "description": {
+            "kind": "markdown",
+            "value": "icon 颜色，同 css 的 color。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "description": "Badge 徽标",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "类名称。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "text",
+          "description": {
+            "kind": "markdown",
+            "value": "展示的数字或文案。\n\ntype: String / Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "dot",
+          "description": {
+            "kind": "markdown",
+            "value": "不展示数字，只有一个小红点。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "overflowCount",
+          "description": {
+            "kind": "markdown",
+            "value": "展示封顶的数字值，超出部分用 + 号表示。\n\ntype: Number\n\ndefaultValue: 99\n"
+          }
+        },
+        {
+          "name": "withArrow",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用箭头。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "direction",
+          "description": {
+            "kind": "markdown",
+            "value": "箭头方向。可选值：middle\n、left、right。\n\ntype: String\n\ndefaultValue: middle\n"
+          }
+        },
+        {
+          "name": "stroke",
+          "description": {
+            "kind": "markdown",
+            "value": "是否带描边的气泡。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "description": "button 按钮",
+      "attributes": [
+        {
+          "name": "size",
+          "description": {
+            "kind": "markdown",
+            "value": "有效值 default, mini（小尺寸）。\n\ntype: String\n\ndefaultValue: default\n"
+          }
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "按钮的样式类型，有效值 primary，default,，warn。\n\ntype: String\n\ndefaultValue: default\n"
+          }
+        },
+        {
+          "name": "plain",
+          "description": {
+            "kind": "markdown",
+            "value": "是否镂空（ghost 与 plain 等效）。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "disabled",
+          "description": {
+            "kind": "markdown",
+            "value": "是否禁用。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "loading",
+          "description": {
+            "kind": "markdown",
+            "value": "按钮文字前是否带 loading 图标。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "hover-class",
+          "description": {
+            "kind": "markdown",
+            "value": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。\n\ntype: String\n\ndefaultValue: button-hover\n"
+          }
+        },
+        {
+          "name": "hover-start-time",
+          "description": {
+            "kind": "markdown",
+            "value": "按住后多少时间后出现点击状态，单位毫秒。\n\ntype: Number\n\ndefaultValue: 20\n"
+          }
+        },
+        {
+          "name": "hover-stay-time",
+          "description": {
+            "kind": "markdown",
+            "value": "手指松开后点击状态保留时间，单位毫秒。\n\ntype: Number\n\ndefaultValue: 70\n"
+          }
+        },
+        {
+          "name": "hover-stop-propagation",
+          "description": {
+            "kind": "markdown",
+            "value": "是否阻止当前元素的祖先元素出现被点击样式。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "form-type",
+          "description": {
+            "kind": "markdown",
+            "value": "有效值：submit， reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "open-type",
+          "description": {
+            "kind": "markdown",
+            "value": "开放能力。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "scope",
+          "description": {
+            "kind": "markdown",
+            "value": "当 open-type 为 getAuthorize 时有效。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击。说明：每点击一次会触发一次事件，建议自行使用代码防止重复点击,可以使用 js 防抖和节流实现。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "public-id",
+          "description": {
+            "kind": "markdown",
+            "value": "生活号 id，必须是当前小程序同主体且已关联的生活号，open-type=\"lifestyle\" 时有效。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "collapse",
+      "description": "Collapse 折叠面板",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "activeKey",
+          "description": {
+            "kind": "markdown",
+            "value": "当前激活 tab 面板的 key。\n\ntype: Array / String\n\ndefaultValue: 默认无，accordion模式下默认第一个元素\n"
+          }
+        },
+        {
+          "name": "onChange",
+          "description": {
+            "kind": "markdown",
+            "value": "切换面板的回调。\n\ntype: EventHandle\n\ndefaultValue: (activeKeys: Array): void\n"
+          }
+        },
+        {
+          "name": "accordion",
+          "description": {
+            "kind": "markdown",
+            "value": "是否为手风琴模式。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "collapseKey",
+          "description": {
+            "kind": "markdown",
+            "value": "唯一标示 collapse 和对应的 collapse-item。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "component-favorite",
+      "description": "小程序收藏",
+      "attributes": []
+    },
+    {
+      "name": "filter",
+      "description": "Filter 筛选",
+      "attributes": []
+    },
+    {
+      "name": "image",
+      "description": "image 图片",
+      "attributes": [
+        {
+          "name": "src",
+          "description": {
+            "kind": "markdown",
+            "value": "图片地址。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "mode",
+          "description": {
+            "kind": "markdown",
+            "value": "图片模式。\n\ntype: String\n\ndefaultValue: scaleToFill\n"
+          }
+        },
+        {
+          "name": "class",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: String\n\ndefaultValue: 外部样式\n"
+          }
+        },
+        {
+          "name": "style",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: String\n\ndefaultValue: 内联样式\n"
+          }
+        },
+        {
+          "name": "lazy-load",
+          "description": {
+            "kind": "markdown",
+            "value": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "default-source",
+          "description": {
+            "kind": "markdown",
+            "value": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onLoad",
+          "description": {
+            "kind": "markdown",
+            "value": "图片载入完毕时触发，事件对象 event.detail = {height: '图片高度px', width: '图片宽度px'}。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onError",
+          "description": {
+            "kind": "markdown",
+            "value": "当图片加载错误时触发，事件对象 event.detail = {errMsg: 'something wrong'。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击图片时触发。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "catchTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击图片时触发，阻止事件冒泡。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "inputitem",
+      "description": "InputItem 文本输入",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义的 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "labelCls",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 label 的 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "inputCls",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 input 的 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "last",
+          "description": {
+            "kind": "markdown",
+            "value": "是否最后一行。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "value",
+          "description": {
+            "kind": "markdown",
+            "value": "初始内容。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "组件名字，用于表单提交获取数据。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "input 的类型，可选值：text，number，idcard，digit。\n\ntype: String\n\ndefaultValue: text\n"
+          }
+        },
+        {
+          "name": "password",
+          "description": {
+            "kind": "markdown",
+            "value": "是否是密码类型。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "placeholder",
+          "description": {
+            "kind": "markdown",
+            "value": "占位符。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "placeholderStyle",
+          "description": {
+            "kind": "markdown",
+            "value": "指定 placeholder 的样式。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "placeholderClass",
+          "description": {
+            "kind": "markdown",
+            "value": "指定 placeholder 的样式类。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "disabled",
+          "description": {
+            "kind": "markdown",
+            "value": "是否禁用。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "maxlength",
+          "description": {
+            "kind": "markdown",
+            "value": "最大长度。\n\ntype: Number\n\ndefaultValue: 140\n"
+          }
+        },
+        {
+          "name": "focus",
+          "description": {
+            "kind": "markdown",
+            "value": "获取焦点。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "clear",
+          "description": {
+            "kind": "markdown",
+            "value": "是否带清除功能，仅 disabled 为 false 才生效。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "onInput",
+          "description": {
+            "kind": "markdown",
+            "value": "键盘输入时触发 input 事件。\n\ntype: (e: Object) => void\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onConfirm",
+          "description": {
+            "kind": "markdown",
+            "value": "点击键盘完成时触发。\n\ntype: (e: Object) => void\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onFocus",
+          "description": {
+            "kind": "markdown",
+            "value": "聚焦时触发。\n\ntype: (e: Object) => void\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onBlur",
+          "description": {
+            "kind": "markdown",
+            "value": "失去焦点时触发。\n\ntype: (e: Object) => void\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onClear",
+          "description": {
+            "kind": "markdown",
+            "value": "点击清除 icon 时触发。\n\ntype: () => void\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "layer",
+          "description": {
+            "kind": "markdown",
+            "value": "文本输入框是否为垂直排列，vertical 时为垂直排列，空值为横向排列。可选值：vertical。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "controlled",
+          "description": {
+            "kind": "markdown",
+            "value": "是否为受控组件。详情请参见 input 组件。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "list",
+      "description": "List 列表",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 自定义class。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "loadMore",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 显示加载更多 item。load：显示加载更多；over：显示加载完成无更多。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "loadContent",
+          "description": {
+            "kind": "markdown",
+            "value": "['加载更多...','-- 数据加载完了 --']\n\ntype: 需结合 loadMore 属性使用，用于文案展示。\n\ndefaultValue: Array\n"
+          }
+        },
+        {
+          "name": "loadingSize",
+          "description": {
+            "kind": "markdown",
+            "value": "16 px\n\ntype: loading icon 的大小。\n\ndefaultValue: String\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "map",
+      "description": "map 地图",
+      "attributes": [
+        {
+          "name": "style",
+          "description": {
+            "kind": "markdown",
+            "value": "内联样式 。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "class",
+          "description": {
+            "kind": "markdown",
+            "value": "样式名 。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "​latitude",
+          "description": {
+            "kind": "markdown",
+            "value": "中心纬度。\n\ntype: ​Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "longitude",
+          "description": {
+            "kind": "markdown",
+            "value": "中心经度。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "scale",
+          "description": {
+            "kind": "markdown",
+            "value": "缩放级别，取值范围为 5-18 。\n\ntype: Number\n\ndefaultValue: 16\n"
+          }
+        },
+        {
+          "name": "skew",
+          "description": {
+            "kind": "markdown",
+            "value": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "rotate",
+          "description": {
+            "kind": "markdown",
+            "value": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "markers",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，在地图上的一个点绘制图标。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "polyline",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，多个连贯点的集合（路线）。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "circles",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，圆。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "controls",
+          "description": {
+            "kind": "markdown",
+            "value": "在地图 View 之上的一个控件。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "polygon",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，多边形。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "show-location",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示带有方向的当前定位点。\n\ntype: Boolean\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "include-points",
+          "description": {
+            "kind": "markdown",
+            "value": "视野将进行小范围延伸包含传入的坐标。[{\n    latitude: 30.279383,\n    longitude: 120.131441,\n}]\n\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "include-padding",
+          "description": {
+            "kind": "markdown",
+            "value": "视野在地图 padding 范围内展示。{\n    left:0, right:0,\n    top:0, bottom:0\n}\n\n\ntype: Object\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "ground-overlays",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，自定义贴图。[{\n    // 右上，左下\n    'include-points':[{\n        latitude: 39.935029,\n        longitude: 116.384377,\n    },{\n        latitude: 39.939577,\n        longitude: 116.388331,\n    }],\n    image:'/image/overlay.png',\n    alpha:0.25,\n    zIndex:1\n}]\n\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "tile-overlay",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖物，网格贴图。{\n    url:'http://xxx',\n    type:0, // url类型\n    tileWidth:256,\n    tileHeight:256,\n    zIndex:1,\n}\n\n\ntype: Object\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "custom-map-style",
+          "description": {
+            "kind": "markdown",
+            "value": "设置地图样式。\ndefault：默认样式light：精简样式\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "panels",
+          "description": {
+            "kind": "markdown",
+            "value": "基于 map 高级定制渲染，设置覆盖在地图上的 view\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "setting",
+          "description": {
+            "kind": "markdown",
+            "value": "设置。{\n\t// 手势\n\tgestureEnable: 1,\n\t// 比例尺\n\tshowScale: 1,\n\t// 指南针\n\tshowCompass: 1,\n\t//双手下滑\n\ttiltGesturesEnabled: 1,\n\t// 交通路况展示\n\ttrafficEnabled: 0,\n\t// 地图 POI 信息\n\tshowMapText: 0,\n\t// 高德地图 logo 位置\n\tlogoPosition: {\n\t\tcenterX: 150,\n\t\tcenterY: 90\n\t}\n}\n\n\ntype: Object\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onMarkerTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 Marker 时触发。{\n    markerId,\n    latitude,\n    longitude, \n}\n\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onCalloutTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 Marker 对应的 callout 时触发。{\n    markerId,\n    latitude,\n    longitude, \n}\n\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onControlTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 control 时触发。{\n    controlId\n}\n\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onRegionChange",
+          "description": {
+            "kind": "markdown",
+            "value": "视野发生变化时触发。{\n    type: \"begin/end\", \n    latitude,\n    longitude, \n    scale\n}\n\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击地图时触发。{\n    latitude,\n    longitude, \n}\n\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onPanelTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 panel 时触发{    panelId,   layoutId,}\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "marketing-components",
+      "description": "营销组件使用说明",
+      "attributes": []
+    },
+    {
+      "name": "message",
+      "description": "Message 结果页",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义的 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "状态类型。有 success、fail、info、warn、waiting 五种状态类型。\n\ntype: String\n\ndefaultValue: success\n"
+          }
+        },
+        {
+          "name": "title",
+          "description": {
+            "kind": "markdown",
+            "value": "主标题。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "subTitle",
+          "description": {
+            "kind": "markdown",
+            "value": "副标题。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "mainButton",
+          "description": {
+            "kind": "markdown",
+            "value": "主按钮的文本和可用性相关。\n\ntype: Object<buttonText, disabled>\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "subButton",
+          "description": {
+            "kind": "markdown",
+            "value": "副按钮的文本和可用性相关。\n\ntype: Object<buttonText, disabled>\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTapMain",
+          "description": {
+            "kind": "markdown",
+            "value": "主按钮的点击函数。\n\ntype: () => {}\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTapSub",
+          "description": {
+            "kind": "markdown",
+            "value": "副按钮的点击函数。\n\ntype: () => {}\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "modal",
+      "description": "Modal 对话框",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "show",
+          "description": {
+            "kind": "markdown",
+            "value": "是否展示 modal。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "showClose",
+          "description": {
+            "kind": "markdown",
+            "value": "是否渲染 关闭。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "mask",
+          "description": {
+            "kind": "markdown",
+            "value": "是否展示蒙层。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "closeType",
+          "description": {
+            "kind": "markdown",
+            "value": "关闭图表类型。可选值：0-灰色图标；1-白色图标。\n\ntype: String\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "onModalClick",
+          "description": {
+            "kind": "markdown",
+            "value": "选择区间时的回调。\n\ntype: EventHandle\n\ndefaultValue: () => void\n"
+          }
+        },
+        {
+          "name": "onModalClose",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 关闭 的回调, showClose 为 false 时无需设置。\n\ntype: EventHandle\n\ndefaultValue: () => void\n"
+          }
+        },
+        {
+          "name": "topImage",
+          "description": {
+            "kind": "markdown",
+            "value": "顶部图片。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "topImageSize",
+          "description": {
+            "kind": "markdown",
+            "value": "顶部图片规则.可选值：lg (带图弹框-大图)md (带图弹框)sm(带图弹框-小图)\n\ntype: String\n\ndefaultValue: md\n"
+          }
+        },
+        {
+          "name": "buttons",
+          "description": {
+            "kind": "markdown",
+            "value": "底部自定义多按钮, 详情见 buttons 配置。\n\ntype: Array<Object>\n\ndefaultValue: md\n"
+          }
+        },
+        {
+          "name": "onButtonClick",
+          "description": {
+            "kind": "markdown",
+            "value": "点击 buttons 部分的回调。\n\ntype: EventHandle\n\ndefaultValue: (e: Object) => void\n"
+          }
+        },
+        {
+          "name": "buttonsLayout",
+          "description": {
+            "kind": "markdown",
+            "value": "设置 buttons 的对齐方式。可选值：horizontal，vertical。\n\ntype: String\n\ndefaultValue: horizontal\n"
+          }
+        },
+        {
+          "name": "advice",
+          "description": {
+            "kind": "markdown",
+            "value": "是否是运营类弹窗。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "zIndex",
+          "description": {
+            "kind": "markdown",
+            "value": "设置弹框层级。\n\ntype: String/Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "disableScroll",
+          "description": {
+            "kind": "markdown",
+            "value": "modal 展示时是否禁止页面滚动（以真机效果为准）。可选值：true、false。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "movable-view",
+      "description": "movable-view 可移动视图容器",
+      "attributes": [
+        {
+          "name": "direction",
+          "description": {
+            "kind": "markdown",
+            "value": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none。\n\ntype: String\n\ndefaultValue: none\n"
+          }
+        },
+        {
+          "name": "inertia",
+          "description": {
+            "kind": "markdown",
+            "value": "movable-view 是否带有惯性。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "out-of-bounds",
+          "description": {
+            "kind": "markdown",
+            "value": "超过可移动区域后，movable-view 是否还可以移动。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "x",
+          "description": {
+            "kind": "markdown",
+            "value": "定义 x 轴方向的偏移，会换算为 left 属性，如果 x 的值不在可移动范围内，会自动移动到可移动范围。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "y",
+          "description": {
+            "kind": "markdown",
+            "value": "定义 y 轴方向的偏移，会换算为 top 属性，如果 y 的值不在可移动范围内，会自动移动到可移动范围。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "damping",
+          "description": {
+            "kind": "markdown",
+            "value": "阻尼系数，用于控制x或y改变时的动画和过界回弹的动画，值越大移动越快。\n\ntype: Number\n\ndefaultValue: 20\n"
+          }
+        },
+        {
+          "name": "friction",
+          "description": {
+            "kind": "markdown",
+            "value": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值。\n\ntype: Number\n\ndefaultValue: 2\n"
+          }
+        },
+        {
+          "name": "disabled",
+          "description": {
+            "kind": "markdown",
+            "value": "是否禁用。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "scale",
+          "description": {
+            "kind": "markdown",
+            "value": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "scale-min",
+          "description": {
+            "kind": "markdown",
+            "value": "定义缩放倍数最小值。\n\ntype: Number\n\ndefaultValue: 0.5\n"
+          }
+        },
+        {
+          "name": "scale-max",
+          "description": {
+            "kind": "markdown",
+            "value": "定义缩放倍数最大值。\n\ntype: Number\n\ndefaultValue: 10\n"
+          }
+        },
+        {
+          "name": "scale-value",
+          "description": {
+            "kind": "markdown",
+            "value": "定义缩放倍数，取值范围为 0.5 - 10。\n\ntype: Number\n\ndefaultValue: 1\n"
+          }
+        },
+        {
+          "name": "animation",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用动画。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "onTouchStart",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸动作开始，事件会向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "catchTouchStart",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸动作开始，事件仅作用于组件，不向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTouchMove",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸移动事件，事件会向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "catchTouchMove",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸移动事件，事件仅作用于组件，不向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTouchEnd",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸动作结束，事件会向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "catchTouchEnd",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸动作结束，事件仅作用于组件，不向父节点传递。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTouchCancel",
+          "description": {
+            "kind": "markdown",
+            "value": "触摸动作被打断，如来电提醒、弹窗。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onChange",
+          "description": {
+            "kind": "markdown",
+            "value": "拖动过程中触发的事件，event.detail = {x: x, y: y, source: source}，其中 source 表示产生移动的原因，值可为 touch（拖动）。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onChangeEnd",
+          "description": {
+            "kind": "markdown",
+            "value": "拖动结束触发的事件，event.detail = {x: x, y: y}。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onScale",
+          "description": {
+            "kind": "markdown",
+            "value": "缩放过程中触发的事件，event.detail = {x, y, scale}。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "navigator",
+      "description": "navigator 页面链接",
+      "attributes": [
+        {
+          "name": "open-type",
+          "description": {
+            "kind": "markdown",
+            "value": "跳转方式。\n\ntype: String\n\ndefaultValue: navigate\n"
+          }
+        },
+        {
+          "name": "hover-class",
+          "description": {
+            "kind": "markdown",
+            "value": "点击后的样式类。\n\ntype: String\n\ndefaultValue: none\n"
+          }
+        },
+        {
+          "name": "hover-start-time",
+          "description": {
+            "kind": "markdown",
+            "value": "按住后多少时间后出现点击状态，单位 ms。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "hover-stay-time",
+          "description": {
+            "kind": "markdown",
+            "value": "手指松开后点击状态保留时间，单位 ms。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "url",
+          "description": {
+            "kind": "markdown",
+            "value": "当前小程序内的跳转链接。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "description": "Pagination 分页",
+      "attributes": []
+    },
+    {
+      "name": "pickeritem",
+      "description": "PickerItem 选择输入",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 自定义的 class。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "labelCls",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 自定义 label 的class。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "pickerCls",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 自定义选择区域的 class。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "last",
+          "description": {
+            "kind": "markdown",
+            "value": "false\n\ntype: 是否最后一行。可选值：true、false。\n\ndefaultValue: Boolean\n"
+          }
+        },
+        {
+          "name": "value",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 初始内容。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 组件名字，用于表单提交获取数据。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "placeholder",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 占位符。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "onPickerTap",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 点击 pickeritem 时触发。\n\ndefaultValue: (e: Object) => void\n"
+          }
+        },
+        {
+          "name": "layer",
+          "description": {
+            "kind": "markdown",
+            "value": "-\n\ntype: 文本输入框是否为垂直排列，vertical 时为垂直排列，空值为横向排列。可选值：vertical。\n\ndefaultValue: String\n"
+          }
+        },
+        {
+          "name": "iconType",
+          "description": {
+            "kind": "markdown",
+            "value": "right\n\ntype: 更改 picker-item 的 icon 类型，参考 Am-icon 的 type 值。\n\ndefaultValue: String\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "description": "Popover 气泡",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "最外层覆盖样式。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "show",
+          "description": {
+            "kind": "markdown",
+            "value": "气泡是否展示。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "showMask",
+          "description": {
+            "kind": "markdown",
+            "value": "蒙层是否展示。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "position",
+          "description": {
+            "kind": "markdown",
+            "value": "气泡位置。可选值：top、topRight、topLeft、bottom、bottomLeft、bottomRight、right、rightTop、rightBottom、left、leftBottom、leftTop。\n\ntype: String\n\ndefaultValue: bottomRight\n"
+          }
+        },
+        {
+          "name": "fixMaskFull",
+          "description": {
+            "kind": "markdown",
+            "value": "用以解决遮罩层受到 transform 影响而显示不全的问题。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "steps",
+      "description": "Steps 步骤条",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "最外层覆盖样式。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "activeIndex",
+          "description": {
+            "kind": "markdown",
+            "value": "当前激活步骤。\n\ntype: Number\n\ndefaultValue: 1\n"
+          }
+        },
+        {
+          "name": "failIndex",
+          "description": {
+            "kind": "markdown",
+            "value": "当前失败步骤（只在 vertical 模式下生效）。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "direction",
+          "description": {
+            "kind": "markdown",
+            "value": "显示方向，可选值：vertical、horizontal。\n\ntype: String\n\ndefaultValue: horizontal\n"
+          }
+        },
+        {
+          "name": "size",
+          "description": {
+            "kind": "markdown",
+            "value": "统一的 icon 大小，单位为 px。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "items",
+          "description": {
+            "kind": "markdown",
+            "value": "步骤详情。\n\ntype: Array[{title, description, icon, activeIcon, size}]\n\ndefaultValue: []\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "description": "Tabs 横向选项卡",
+      "attributes": [
+        {
+          "name": "className",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "activeCls",
+          "description": {
+            "kind": "markdown",
+            "value": "自定义激活 tabbar 的 class（设置字体样式和宽度）。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "tabs",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 数据，其中包括选项标题 title、副标题（描述）文案 subTitle、胶囊形式 tab 中的数字 number，如需要以 badge 方式展示数字，添加 showBadge 并设置为 true 即可。\n\ntype: Array\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "tabsName",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 选项卡的名字，与 activeTab 的 key 值相同 。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "activeTab",
+          "description": {
+            "kind": "markdown",
+            "value": "当前激活的 Tab 索引。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "tabBarCls",
+          "description": {
+            "kind": "markdown",
+            "value": "tabbar的自定义样式 class。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "tabBarUnderlineColor",
+          "description": {
+            "kind": "markdown",
+            "value": "选中选项卡下划线颜色。\n\ntype: String\n\ndefaultValue: #1677FF\n"
+          }
+        },
+        {
+          "name": "tabBarActiveTextColor",
+          "description": {
+            "kind": "markdown",
+            "value": "选中选项卡字体颜色。\n\ntype: String\n\ndefaultValue: #1677FF\n"
+          }
+        },
+        {
+          "name": "capsuleTabBarActiveTextColor",
+          "description": {
+            "kind": "markdown",
+            "value": "胶囊选中选项卡字体颜色。\n\ntype: String\n\ndefaultValue: #ffffff\n"
+          }
+        },
+        {
+          "name": "capsuleTabBarBackgroundColor",
+          "description": {
+            "kind": "markdown",
+            "value": "胶囊未选中的背景色\n\ntype: String\n\ndefaultValue: #e5e5e5\n"
+          }
+        },
+        {
+          "name": "tabBarInactiveTextColor",
+          "description": {
+            "kind": "markdown",
+            "value": "未选中选项卡字体颜色。\n\ntype: String\n\ndefaultValue: #333333\n"
+          }
+        },
+        {
+          "name": "tabBarSubTextColor",
+          "description": {
+            "kind": "markdown",
+            "value": "未选中描述字体颜色。\n\ntype: String\n\ndefaultValue: #999999\n"
+          }
+        },
+        {
+          "name": "tabBarActiveSubTextColor",
+          "description": {
+            "kind": "markdown",
+            "value": "选中描述字体颜色。\n\ntype: String\n\ndefaultValue: #ffffff\n"
+          }
+        },
+        {
+          "name": "tabBarBackgroundColor",
+          "description": {
+            "kind": "markdown",
+            "value": "选项卡背景颜色。\n\ntype: String\n\ndefaultValue: #ffffff\n"
+          }
+        },
+        {
+          "name": "showPlus",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示 + icon。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "swipeable",
+          "description": {
+            "kind": "markdown",
+            "value": "tabs 内容区是否可拖动。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "animation",
+          "description": {
+            "kind": "markdown",
+            "value": "选项卡切换时滑动动画。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "tabs 内容区切换动画时长。\n\ntype: Number\n\ndefaultValue: 500\n"
+          }
+        },
+        {
+          "name": "capsule",
+          "description": {
+            "kind": "markdown",
+            "value": "是否为胶囊 tab。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "hasSubTitle",
+          "description": {
+            "kind": "markdown",
+            "value": "是否有副标题（描述）内容。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "elevator",
+          "description": {
+            "kind": "markdown",
+            "value": "是否电梯组件。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "elevatorTop",
+          "description": {
+            "kind": "markdown",
+            "value": "电梯组件中 tab 置顶时的位置控制\n\ntype: String\n\ndefaultValue: 0px\n"
+          }
+        },
+        {
+          "name": "elevatorContentTop",
+          "description": {
+            "kind": "markdown",
+            "value": "电梯组件中 tab-content 距离顶部的位置。\n\ntype: Number\n\ndefaultValue: 0\n"
+          }
+        },
+        {
+          "name": "onPlusClick",
+          "description": {
+            "kind": "markdown",
+            "value": "+ icon 被点击时的回调。\n\ntype: EventHandle\n\ndefaultValue: () => {}\n"
+          }
+        },
+        {
+          "name": "onTabClick",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 被点击的回调。\n\ntype: EventHandle\n\ndefaultValue: (index: Number，tabsName：String) => void\n"
+          }
+        },
+        {
+          "name": "onChange",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 变化时触发。\n\ntype: EventHandle\n\ndefaultValue: (index: Number，tabsName：String) => void\n"
+          }
+        },
+        {
+          "name": "tabsName",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 选项卡的名字，与 activeTab 的 key 值相同。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "tabBarUnderlineWidth",
+          "description": {
+            "kind": "markdown",
+            "value": "设置 tab 选项卡选中态的下划线宽度\n\ntype: String\n\ndefaultValue: 100%\n"
+          }
+        },
+        {
+          "name": "tabBarUnderlineHeight",
+          "description": {
+            "kind": "markdown",
+            "value": "设置 tab 选项卡选中态的下划线高度\n\ntype: String\n\ndefaultValue: 2px\n"
+          }
+        },
+        {
+          "name": "onTabFirstShow",
+          "description": {
+            "kind": "markdown",
+            "value": "tab 选项卡首次出现时的回调\n\ntype: EventHandle\n\ndefaultValue: (index: Number, tabsName: String) => {}\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "description": "text 文本",
+      "attributes": [
+        {
+          "name": "selectable",
+          "description": {
+            "kind": "markdown",
+            "value": "是否可选。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "space",
+          "description": {
+            "kind": "markdown",
+            "value": "以何种方式显示连续空格。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "decode",
+          "description": {
+            "kind": "markdown",
+            "value": "是否解码。为 true 时表示对文本内容进行解码，可解析的 HTML 实体字符有：&nbsp;&lt;&gt;&amp;&apos;&ensp;&emsp;。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "number-of-lines",
+          "description": {
+            "kind": "markdown",
+            "value": "多行省略，值须大于等于1，表现同 css 的 -webkit-line-clamp 属性一致。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tips",
+      "description": "Tips 引导",
+      "attributes": []
+    },
+    {
+      "name": "typescript",
+      "description": "TypeScript 支持",
+      "attributes": []
+    },
+    {
+      "name": "video",
+      "description": "video 视频",
+      "attributes": [
+        {
+          "name": "style",
+          "description": {
+            "kind": "markdown",
+            "value": "内联样式。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "class",
+          "description": {
+            "kind": "markdown",
+            "value": "外部样式名。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "src",
+          "description": {
+            "kind": "markdown",
+            "value": "要播放的视频资源地址，支持优酷视频编码（支付宝客户端10.1.75），优酷视频上传流程请见 小程序视频播放。src 支持的协议如下：vid/showId: XMzg2Mzc5MzMwMA==  apFilePath: https://resource/xxx.video。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "initial-time",
+          "description": {
+            "kind": "markdown",
+            "value": "指定视频初始播放位置，单位：s。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "指定视频时长，单位s，默认读取视频本身时长信息。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "autoplay",
+          "description": {
+            "kind": "markdown",
+            "value": "是否自动播放。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "loop",
+          "description": {
+            "kind": "markdown",
+            "value": "是否循环播放。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "muted",
+          "description": {
+            "kind": "markdown",
+            "value": "是否静音播放。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "page-gesture",
+          "description": {
+            "kind": "markdown",
+            "value": "非全屏状态下是否支持手势调节音量和亮度。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "direction",
+          "description": {
+            "kind": "markdown",
+            "value": "设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针90度）, -90（屏幕顺时针90）。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "show-fullscreen-btn",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示全屏按钮。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "show-play-btn",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示视频底部控制栏的播放按钮。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "show-center-play-btn",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示视频中间的播放按钮。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "show-mute-btn",
+          "description": {
+            "kind": "markdown",
+            "value": "是否展示工具栏上的静音按钮。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "show-thin-progress-bar",
+          "description": {
+            "kind": "markdown",
+            "value": "当底部工具条隐藏时，是否显示细进度条（controls=false 时设置无效）。\n\ntype: Boolean\n\ndefaultValue: false\n"
+          }
+        },
+        {
+          "name": "enable-progress-gesture",
+          "description": {
+            "kind": "markdown",
+            "value": "是否开启左右滑动控制进度的手势。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "object-fit",
+          "description": {
+            "kind": "markdown",
+            "value": "当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含fill：填充（播放后生效，如果视频初始化(未播放)状态，显示视频自动适应宽度）cover：覆盖 video 标签认宽度 300px、高度 225px，设置宽高可以通过 style 设置 width 和 height。\n\ntype: String\n\ndefaultValue: contain\n"
+          }
+        },
+        {
+          "name": "poster",
+          "description": {
+            "kind": "markdown",
+            "value": "视频封面图的 URL，支持jpg、png等图片，如 _https://*.jpg。 如果不传的话，默认取视频的首帧图作为封面图。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "controls",
+          "description": {
+            "kind": "markdown",
+            "value": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）。\n\ntype: Boolean\n\ndefaultValue: true\n"
+          }
+        },
+        {
+          "name": "mobilenetHintType",
+          "description": {
+            "kind": "markdown",
+            "value": "移动网络提醒样式：0-不提醒；1-tip 提醒；2-阻塞提醒(无消耗流量大小)；3-阻塞提醒(有消耗流量大小)。\n\ntype: Number\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "poster-size",
+          "description": {
+            "kind": "markdown",
+            "value": "当 poster 高宽比跟视频高宽不匹配时，如何显示 poster，设置规则同 background-size 一致。\n\ntype: String\n\ndefaultValue: contain\n"
+          }
+        },
+        {
+          "name": "onPlay",
+          "description": {
+            "kind": "markdown",
+            "value": "当开始/继续播放时触发 play 事件。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onPause",
+          "description": {
+            "kind": "markdown",
+            "value": "当暂停播放时触发 pause 事件。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onEnded",
+          "description": {
+            "kind": "markdown",
+            "value": "当播放到末尾时触发 ended 事件。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTimeUpdate",
+          "description": {
+            "kind": "markdown",
+            "value": "播放进度变化时触发，event.detail = {currentTime: '当前播放时间',userPlayDuration:'用户实际观看时长',videoDuration:'视频总时长'} 。触发频率应该在 250ms 一次。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onLoading",
+          "description": {
+            "kind": "markdown",
+            "value": "视频资源加载中。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onStop",
+          "description": {
+            "kind": "markdown",
+            "value": "视频播放终止。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onRenderStart",
+          "description": {
+            "kind": "markdown",
+            "value": "当视频加载完真正开始播放时触发。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onError",
+          "description": {
+            "kind": "markdown",
+            "value": "视频播放出错时触发(errorCode 见下面错误码表)。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onFullScreenChange",
+          "description": {
+            "kind": "markdown",
+            "value": "视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction的值可能为 vertical 或 horizontal。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onTap",
+          "description": {
+            "kind": "markdown",
+            "value": "点击视频 view 时触发，event.detail = {ptInView:{x:0,y:0}}。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onUserAction",
+          "description": {
+            "kind": "markdown",
+            "value": "用户操作事件，event.detail = {tag:\"mute\", value:0}，tag为用户操作的元素，目前支持的 tag 有：play(底部播放按钮)、centerplay(中心播放按钮)、mute(静音按钮)、fullscreen(全屏按钮)、retry(重试按钮)、mobilenetplay(网络提醒的播放按钮)。\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vtabs",
+      "description": "Vtabs 纵向选项卡",
+      "attributes": []
+    },
+    {
+      "name": "web-view",
+      "description": "web-view H5 页面承载",
+      "attributes": [
+        {
+          "name": "src",
+          "description": {
+            "kind": "markdown",
+            "value": "web-view 要渲染的 H5 网页 URL ，需要在如下路径中 支付宝小程序管理中心 > 设置 > 开发设置 >H5域名配置 进行 H5 域名白名单配置。请参见 配置 H5 白名单流程。\n\ntype: String\n\ndefaultValue: -\n"
+          }
+        },
+        {
+          "name": "onMessage",
+          "description": {
+            "kind": "markdown",
+            "value": "网页向小程序 postMessage 消息。e.detail = { data }\n\ntype: EventHandle\n\ndefaultValue: -\n"
+          }
+        }
+      ]
+    }
+  ]
+}
